@@ -1,0 +1,79 @@
+.st0 {
+  fill: none;
+  stroke: #ff2600;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+}
+.st1 {
+  fill: none;
+  stroke: #0fd163;
+  stroke-width: 8;
+  stroke-miterlimit: 10;
+}
+.st2 {
+  fill: #ff2600;
+}
+.st3 {
+  fill: #0fd163;
+}
+.st4 {
+  fill: #f5ecda;
+}
+.st5 {
+  fill: #f5c9c9;
+}
+.st6 {
+  fill: none;
+  stroke: #f5c9c9;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st7 {
+  fill: #444c63;
+}
+.st8 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st9 {
+  display: none;
+}
+.st10 {
+  display: inline;
+}
+
+@keyframes laserBeem {
+  0% {
+    opacity: 0.7;
+    stroke-width: 10;
+  }
+  50% {
+    opacity: 0.1;
+    stroke-width: 15;
+  }
+  100% {
+    opacity: 1;
+    stroke-width: 5;
+  }
+}
+
+.beem {
+  animation: laserBeem 0.075s infinite;
+}
+
+@keyframes handsFly {
+  0% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.hands {
+  animation: handsFly 1s infinite alternate;
+}
